@@ -19,6 +19,8 @@ CW_4 <a href="https://cagriege.github.io/AutomataTheory/CW4.html"><b>view</b></a
 CW_5 <a href="https://cagriege.github.io/AutomataTheory/CW5/Expression.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/CW5/Expression.html"><b>source</b></a>
 <br>
 
+CW_6 <a href="https://cagriege.github.io/AutomataTheory/CW6.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/CW6.html"><b>source</b></a>
+<br></td>
 # HomeWorks
 HW_1 <a href="https://cagriege.github.io/AutomataTheory/HW1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/HW1.html"><b>source</b></a>
 <br>
