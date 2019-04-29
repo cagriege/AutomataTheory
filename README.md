@@ -1,6 +1,6 @@
 # AutomataTheory
 # ClassWorks
-CW_1 <a href="https://cagriege.github.io/AutomataTheory/Cw1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/Cw1.html"><b>source</b></a>
+CW_1 <a href="https://cagriege.github.io/AutomataTheory/CW1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/CW1.html"><b>source</b></a>
 <br></td>
 
 
