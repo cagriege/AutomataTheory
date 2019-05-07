@@ -32,7 +32,7 @@ HW_1 <a href="https://cagriege.github.io/AutomataTheory/HW1.html"><b>view</b></a
 HW_2 <a href="https://cagriege.github.io/AutomataTheory/hw2/Expression.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/hw2/Expression.html"><b>source</b></a>
 <br>
 
-HW_3 <a href="https://cagriege.github.io/AutomataTheory/HW3/microJ1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/hHW3/microJ1.html"><b>source</b></a>
+HW_3 <a href="https://cagriege.github.io/AutomataTheory/HW3/microJ1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/HW3/microJ1.html"><b>source</b></a>
 <br>
 
 
