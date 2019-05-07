@@ -28,6 +28,9 @@ CW_7 <a href="https://cagriege.github.io/AutomataTheory/CW7/cw7.html"><b>view</b
 # HomeWorks
 HW_1 <a href="https://cagriege.github.io/AutomataTheory/HW1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/HW1.html"><b>source</b></a>
 <br>
+HW_1 <a href="https://cagriege.github.io/AutomataTheory/Expression.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/Expression.html"><b>source</b></a>
+<br>
+
 
 
 
