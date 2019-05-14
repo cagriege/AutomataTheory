@@ -199,12 +199,12 @@ input[type=text], select {
   </div></a><br>
     <p id="eps"></p>
       <a name="i1">
-      <h2>Regex Explained</h2>
-      <p>&nbsp&nbsp&nbspA regular expression is a special text string to describe a search pattern.
-        After the pattern is defined according to certain rules, it is applied to any text.
-      Matches are checked after the process is finished.
-    It may not be easy to find the desired pattern when Regexp works very well.
-    Because of this, there are certain rules for patterning.</p></a>
+      <h2>What is RegExp ? </h2>
+      <p>&nbsp&nbsp&nbspBasically, a regular expression is a pattern describing a certain amount of text. Their name comes from the     mathematical theory on which they are based.Regular expressions (regex or regexp) are extremely useful in extracting information from any text by searching for one or more matches of a specific search pattern (i.e. a specific sequence of ASCII or unicode characters).
+
+Fields of application range from validation to parsing/replacing strings, passing through translating data to other formats and web scraping.
+
+One of the most interesting features is that once you’ve learned the syntax, you can actually use this tool in (almost) all programming languages ​​(JavaScript, Java, VB, C #, C / C++, Python, Perl, Ruby, Delphi, R, Tcl, and many others) with the slightest distinctions about the support of the most advanced features and syntax versions supported by the engines).</p></a>
       <a name="i2">
       <h2>Pattern Rules</h2>
       <p>&nbsp&nbsp&nbspThe phrase regular expressions, and consequently, regexes, is often used to mean the specific,
@@ -212,52 +212,107 @@ input[type=text], select {
         (that is, each character in the string describing its pattern) is either a metacharacter, having a special meaning,
         or a regular character that has a literal meaning. We told them that there are certain rules for creating patterns.
       Lets  review them in the following subheadings.</p></a>
-      <h3 class="subheadings">&nbsp&nbsp&nbsp&squf; Modifiers</h3>
-      <h5>The Modifiers simply specify the search level.
-        In Javascript language it is taken as the 2nd parameter next to pattern.</h5>
-      <p>i>> Perform case-insensitive matching</p>
-        <p>g>> Bring all matches</p>
-        <p>m>> Perform multiline matching</p>
-        <h3 class="subheadings">&nbsp&nbsp&nbsp&squf; Character classes & Brackets</h3>
-        <p>[abc] >>	a, b, or c (simple class)</p>
-        <p>[^abc] >>	Any character except a, b, or c (negation)</p>
-        <p>[a-zA-Z] >> all letters small and large (but does not contain turkish characters)</p>
-        <p>[0-9] >> Between 0 and 9 matches</p>
-        <p>(a|b) >>	Find any of the alternatives specified</p>
-        <h3 class="subheadings">&nbsp&nbsp&nbsp&squf; Metacharacters</h3>
-        <p>.  Finds any character</p>
-        <p>\w	Find a word character</p>
-        <p>\W	Find a non-word character</p>
-        <p>\d	Find a digit</p>
-        <p>\D	Find a non-digit character</p>
-        <p>\s	Find a whitespace character</p>
-        <p>\S	Find a non-whitespace character</p>
-        <h3 class="subheadings">&nbsp&nbsp&nbsp&squf; Quantifiers</h3>
-        <p>* >> Match zero or more times</p>
-        <p>+ >> Match one or more times</p>
-        <p>? >> Match zero or one times</p>
-        <p>{n} >> Match exactly n times</p>
-        <p>{n,m} >> Match from n to m times</p>
-        <a name="i3">
-        <h2>Regular Expression in Linux Terminal (GREP)</h2>
-        <p>&nbsp&nbsp&nbspThe grep command is used to search text. It searches the given
-          file for lines containing a match to the given strings or words.
-          It is one of the most useful commands on Linux and Unix-like system.
-           Let us see how to use grep on a Linux or Unix like system.<p>
-        <p>Basic using</p>
-        <p>grep "regexp" "file location" </p>
-        <p>"grep ‘brkuguz@gmail.com’ /home/burak/backup/log.txt"</p>
-        <p>The command above lists all the lines with "brkuguz@gmail.com".
-        Text files do not have to have a .txt extension.</p></a>
-        <a name="i4">
-        <h2>Advantages</h2>
-        <p>-Portable</p>
-        <p>-One knowledge set spans multiple OS, languages and utilities</p>
-        <p>-Universally known in the UNIX world</p>
-        <p>-Much better than complex conditions</p>
-        <p>-One line of Regex can replace 100 lines of procedural code</p>
-        <p>-Easy to create by trial and error</p>
-        <p>-Less error prone than code</p></a>
+      <h3 class="subheadings">&nbsp&nbsp&nbsp&squf; CheatSheets</h3>
+      <p>
+            <table>
+              <tr>
+                <td><b>Character Classes</b></td>
+                <td></td>
+              <tr>
+                <td>\w\d\s</td>
+                <td>word, digit, whitespace</td>
+              </tr>
+              <tr>
+                <td>\W\D\S</td>
+                <td>not word, digit, whitespace</td>
+              </tr>
+              <tr>
+                <td>[abc]</td>
+                <td>any of a, b, or c</td>
+              </tr>
+              <tr>
+                <td>[^abc]</td>
+                <td>not a, b, or c</td>
+              </tr>
+              <tr>
+                <td>[a-g]</td>
+                <td>character between a & g</td>
+              </tr>
+              <tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td> </td>
+              </tr>
+              <td><b>Anchors</b></td>
+              <td></td>
+              </tr>
+              <tr>
+                <td>^abc$</td>
+                <td>start / end of the string</td>
+              </tr>
+              <tr>
+                <td>\b\B</td>
+                <td>word, not-word boundary</td>
+              </tr>
+              <tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td> </td>
+              </tr>
+              <td><b>Escaped characters</b></td>
+              <td></td>
+              </tr>
+              <tr>
+                <td>\.\*\\</td>
+                <td>escaped special characters</td>
+              </tr>
+              <tr>
+                <td>\t\n\r</td>
+                <td>tab, linefeed, carriage return</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td><b> Groups & Lookaround</b></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>(abc)</td>
+                <td>capture group</td>
+              </tr>
+              <tr>
+                <td>(?:abc)</td>
+                <td> non-capturing group</td>
+              </tr>
+              <tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td> </td>
+              </tr>
+              <td><b>Quantifiers & Alternation</b></td>
+              <td></td>
+              </tr>
+              <tr>
+                <td>a*a+a?</td>
+                <td>0 or more, 1 or more, 0 or 1</td>
+              </tr>
+              <tr>
+                <td>a{5}a{2,}</td>
+                <td>exactly five, two or more</td>
+              </tr>
+              <tr>
+                <td>a{1,3}</td>
+                <td>between one & three</td>
+              </tr>
+              <tr>
+                <td>ab|cd </td>
+                <td>match ab or cd</td>
+              </tr>
+            </table>
+          </p>
+      </a>
     </div>
 </div>
 
