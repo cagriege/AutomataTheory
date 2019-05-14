@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Çağrı Ege - RegExp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+#mainDiv{width: 750px; margin: 0 auto;}
+#buttonDiv{margin-left:250px;}
+.subheadings{font-weight: bold;}
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+.header h1 {
+  font-size: 40px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar2{
+  overflow: hidden;
+  background-color: rgb(14, 231, 213);
+  color:rgba(255, 166, 0, 0.849);
+  padding: 0px;
+}
+.button {
+    background-color: #686868;;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.navbar2 p {
+    float: none;
+    display: block;
+	font-weight: 900;
+    color: rgba(0, 0, 0, 0.993);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18;
+}
+
+.navbar2 p:hover {
+    background-color: rgb(238, 20, 20);
+    color: black;
+    cursor: pointer;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a.right {
+    float: right;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 10px;
+    background: #ddd;
+    text-align: center;
+}
+input[type=text], select {
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#regexpFunc{
+	width: 100%;
+	text-align: center;
+	}
+[contentEditable=true]:empty:not(:focus):before{content:attr(data-text);color: black;}
+.textBox{
+  width: 100%;
+  padding: 50px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 5px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div id="mainDiv">
+<div class="row">
+
+  <div class="main">
+    <a name="i5">
+    
+    </a>
+	<style type="text/css">
+		.tg  {border-collapse:collapse;border-spacing:0;}
+		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:black;}
+		.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:black;}
+		.tg .tg-s6z2{text-align:center}
+		.tg .tg-0lax{text-align:left;vertical-align:top}
+		</style>
+		<table class="tg">
+			<tr>
+					<th class="tg-s6z2" colspan="2">
+						<h1><div style="text-align: center; background-color: rgb(14, 231, 213); padding-top: 10px;padding-left: 40px; padding-right: 40px; padding-bottom: 10px;">Regular Expression</div> </h1>
+				</th>
+			</tr>
+		  <tr>
+			<th class="tg-s6z2"><p> Enter  Values</p>
+				<div id="inputRegexp" class="regexpFunc">
+					<input type="text" id="pattern" class="textBox" placeholder="Regular Expression" disabled>
+					  <input type="text" id="patterntxt"  class="textBox" placeholder="Enter text here" onkeyup="regFunc();">
+					  <div id="output" contenteditable="false" class="textBox" style="font-size: 16px;width:500px;"></div>
+					</div>
+				<br>
+				
+			</th>
+			<th class="tg-0lax">
+				<div class="navbar2">
+					<p onclick="func1()">Phone Number</p>
+					<p onclick="func2()">https web adress</p>
+					<p onclick="func3()">Mail Address</p>
+					<p onclick="func4()">Port Checker</p>
+					<p onclick="func5()">Hex Value</p>
+					<p onclick="func6()">Password</p>
+			  
+				  </div>
+			</th>
+		  </tr>
+		</table>
+    <br>
+    
+	
+  </div></a><br>
+    <p id="eps"></p>
+      <a name="i1">
+      <h2>Regex Explained</h2>
+      <p>&nbsp&nbsp&nbspA regular expression is a special text string to describe a search pattern.
+        After the pattern is defined according to certain rules, it is applied to any text.
+      Matches are checked after the process is finished.
+    It may not be easy to find the desired pattern when Regexp works very well.
+    Because of this, there are certain rules for patterning.</p></a>
+      <a name="i2">
+      <h2>Pattern Rules</h2>
+      <p>&nbsp&nbsp&nbspThe phrase regular expressions, and consequently, regexes, is often used to mean the specific,
+        standard textual syntax  for representing patterns for matching text. Each character in a regular expression
+        (that is, each character in the string describing its pattern) is either a metacharacter, having a special meaning,
+        or a regular character that has a literal meaning. We told them that there are certain rules for creating patterns.
+      Lets  review them in the following subheadings.</p></a>
+      <h3 class="subheadings">&nbsp&nbsp&nbsp&squf; Modifiers</h3>
+      <h5>The Modifiers simply specify the search level.
+        In Javascript language it is taken as the 2nd parameter next to pattern.</h5>
+      <p>i>> Perform case-insensitive matching</p>
+        <p>g>> Bring all matches</p>
+        <p>m>> Perform multiline matching</p>
+        <h3 class="subheadings">&nbsp&nbsp&nbsp&squf; Character classes & Brackets</h3>
+        <p>[abc] >>	a, b, or c (simple class)</p>
+        <p>[^abc] >>	Any character except a, b, or c (negation)</p>
+        <p>[a-zA-Z] >> all letters small and large (but does not contain turkish characters)</p>
+        <p>[0-9] >> Between 0 and 9 matches</p>
+        <p>(a|b) >>	Find any of the alternatives specified</p>
+        <h3 class="subheadings">&nbsp&nbsp&nbsp&squf; Metacharacters</h3>
+        <p>.  Finds any character</p>
+        <p>\w	Find a word character</p>
+        <p>\W	Find a non-word character</p>
+        <p>\d	Find a digit</p>
+        <p>\D	Find a non-digit character</p>
+        <p>\s	Find a whitespace character</p>
+        <p>\S	Find a non-whitespace character</p>
+        <h3 class="subheadings">&nbsp&nbsp&nbsp&squf; Quantifiers</h3>
+        <p>* >> Match zero or more times</p>
+        <p>+ >> Match one or more times</p>
+        <p>? >> Match zero or one times</p>
+        <p>{n} >> Match exactly n times</p>
+        <p>{n,m} >> Match from n to m times</p>
+        <a name="i3">
+        <h2>Regular Expression in Linux Terminal (GREP)</h2>
+        <p>&nbsp&nbsp&nbspThe grep command is used to search text. It searches the given
+          file for lines containing a match to the given strings or words.
+          It is one of the most useful commands on Linux and Unix-like system.
+           Let us see how to use grep on a Linux or Unix like system.<p>
+        <p>Basic using</p>
+        <p>grep "regexp" "file location" </p>
+        <p>"grep ‘brkuguz@gmail.com’ /home/burak/backup/log.txt"</p>
+        <p>The command above lists all the lines with "brkuguz@gmail.com".
+        Text files do not have to have a .txt extension.</p></a>
+        <a name="i4">
+        <h2>Advantages</h2>
+        <p>-Portable</p>
+        <p>-One knowledge set spans multiple OS, languages and utilities</p>
+        <p>-Universally known in the UNIX world</p>
+        <p>-Much better than complex conditions</p>
+        <p>-One line of Regex can replace 100 lines of procedural code</p>
+        <p>-Easy to create by trial and error</p>
+        <p>-Less error prone than code</p></a>
+    </div>
+</div>
+
+<div class="footer">
+  <h4>copyright text here
+  <br>and description</h4>
+</div>
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript" >
+
+$('div[contenteditable=true]').keyup(function(e) {
+    if (e.keyCode == 13 && e.keyCode!=undefined) {
+		regFunc();
+      //setCursor();
+      return false;
+    }
+  });
+
+  $("#pattern").keyup(function(event) {
+      if (event.keyCode === 13) {
+          myFunction();
+      }
+  });
+
+  function func1(){
+    document.getElementById("pattern").value = "(0)[1-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}";
+    document.getElementById("patterntxt").value = "02125231453 correct value 0 212 523 14 53  incorrect value " ;
+	regFunc();
+  }
+
+  function func2(){
+    document.getElementById("pattern").value = "(http|https|ftp):\/\/(.*)\.(com|org|tv|net|ist)";
+    document.getElementById("patterntxt").value = "ftp://cagriege.com correct value http://do.co incorrect value	";
+    regFunc();
+  }
+
+  function func3(){
+    document.getElementById("pattern").value = "[A-Za-z]{1}[A-Za-z0-9._%+-]{5,15}@[a-z]{1}[a-z0-9.-]+";
+    document.getElementById("patterntxt").value = "cagriege93@gmail.com correct value  cagri@stu.fsm.edu.tr incorrect value";
+    regFunc();
+  }
+
+  function func4(){
+    document.getElementById("pattern").value = "^([0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])$";
+    document.getElementById("patterntxt").value = "exact value 1 65535";
+    regFunc();
+  }
+
+  function func5(){
+    document.getElementById("pattern").value = "^#?([a-f0-9]{6}|[a-f0-9]{3})$";
+    document.getElementById("patterntxt").value = "#a3c113 correct value 4d82h4 incorrect value";
+    regFunc();
+  }
+  function func6(){
+    document.getElementById("pattern").value = "^[a-z0-9_-]{6,18}$";
+    document.getElementById("patterntxt").value = "myp4ssw0rd correct value myPa$$w0rd incorrect value";
+    regFunc();
+  }
+
+  var newSentence;
+  function regFunc() {
+
+  var sentence=null;
+  var highlighted=null;
+  var reg=null;
+  var isMatch= false;
+  sentence =""+document.getElementById("patterntxt").value+"";
+  tempSentence = sentence;
+  reg = "" + document.getElementById("pattern").value+"";
+
+
+  if(sentence !== "" && reg !== "" ){
+  var array1;
+  newSentence ="";
+  var uzunluk = sentence.length;
+  var keyword="";
+  var patt = new RegExp(reg);
+
+  while ( sentence != "") {
+    if((patt.exec(sentence)) !== null){
+    isMatch = true;
+    array1 = patt.exec(sentence);
+    keyword = array1[0]+"";
+    var atChar = sentence.indexOf(keyword);
+    if(0==sentence.indexOf(keyword)){
+      if(keyword==""){
+        newSentence = newSentence+sentence.charAt(0);
+        sentence = sentence.replace(sentence.charAt(0),"");
+      }else{
+      array1 = patt.exec(sentence);
+      keyword = array1[0]+"";
+      sentence = sentence.replace(keyword,"");
+      keyword = keyword.fontcolor("green");
+      newSentence = newSentence+keyword;
+    }
+  }else{
+    if(keyword==""){
+      newSentence = newSentence+sentence.charAt(0);
+      sentence = sentence.replace(sentence.charAt(0),"");
+    }else{
+      var i = sentence.search(keyword);
+      keyword = sentence.substring(0, i);
+      sentence = sentence.replace(keyword,"");
+      newSentence = newSentence+keyword;
+    }
+  }
+}else{
+  keyword = sentence.substring(0, sentence.length);
+  sentence = sentence.replace(keyword,"");
+  newSentence = newSentence+keyword;
+}
+
+}
+
+if(isMatch==false){
+  document.getElementById("output").innerHTML = newSentence;
+}else{
+  document.getElementById("output").innerHTML = newSentence;
+}
+
+if(isMatch==true && tempSentence==newSentence){
+document.getElementById("eps").innerHTML = "Successful match, ε detected";
+}else{
+  document.getElementById("eps").innerHTML = "";
+}
+}
+}
+
+</script>
