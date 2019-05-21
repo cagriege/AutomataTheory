@@ -25,6 +25,16 @@ CW6 - PDA for Addition <a href="https://cagriege.github.io/AutomataTheory/CW6.ht
 CW7 - microJ3 Parser <a href="https://cagriege.github.io/AutomataTheory/CW7/cw7.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/CW7/cw7.html"><b>source</b></a>
 <br>
 
+CW8 - Term Project Proposal <a href="https://cagriege.github.io/AutomataTheory/index.html"><b>view</b></a>-<a href="https://cagriege.github.io/AutomataTheory/index.html"><b>source</b></a>
+<br>
+
+CW9 - Term Project First Version <a href="https://cagriege.github.io/AutomataTheory/index.html"><b>view</b></a>-<a href="https://cagriege.github.io/AutomataTheory/index.html"><b>source</b></a>
+<br>
+
+CW10 - CW10 - Graph Algorithms <a href="https://cagriege.github.io/AutomataTheory/CW7/cw7.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/CW7/cw7.html"><b>source</b></a>
+<br>
+
+
 # HomeWorks
 HW1 - Syntax Highlighter <a href="https://cagriege.github.io/AutomataTheory/HW1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/HW1.html"><b>source</b></a>
 <br>
