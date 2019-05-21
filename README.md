@@ -31,7 +31,7 @@ CW8 - Term Project Proposal <a href="https://cagriege.github.io/AutomataTheory/i
 CW9 - Term Project First Version <a href="https://cagriege.github.io/AutomataTheory/index.html"><b>view</b></a>-<a href="https://cagriege.github.io/AutomataTheory/index.html"><b>source</b></a>
 <br>
 
-CW10 - CW10 - Graph Algorithms <a href="https://cagriege.github.io/AutomataTheory/CW7/cw7.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/CW7/cw7.html"><b>source</b></a>
+CW10 - Graph Algorithms <a href="https://cagriege.github.io/AutomataTheory/CW7/cw7.html"><b>view</b></a>-<a href="https://github.com/cagriege/AutomataTheory/blob/master/CW7/cw7.html"><b>source</b></a>
 <br>
 
 
